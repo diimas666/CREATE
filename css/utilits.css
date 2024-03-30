@@ -1,6 +1,62 @@
 /* секция скрывает  */
-.section--hidden{
-    opacity: 0;
-    transform: translateY(80px);
+.section {
+    opacity: 1; /* Изначально сделаем секции видимыми */
+    transform: translateY(0); /* Изначально секции не будут смещены */
+    transition: all 1s; /* Добавим плавный переход для изменений */
 }
+
+.section--hidden {
+    opacity: 0; /* Когда секция скрыта, делаем ее невидимой */
+    transform: translateY(80px); /* Смещаем скрытые секции вниз */
+}
+
+
+
 /* конец секции которая скрывает  */
+/* кнопка primary */
+
+.btnPrimary{
+    border-radius: 4px;
+    background: var(--primary, #7772F1);
+    color: var(--white, #FFF);
+    padding: 0 40px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    border: none;
+    font-weight: 700;
+    line-height: 52px; /* 325% */
+    letter-spacing: 0.5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.btnPrimary:hover{
+    background-color: var(--gray-700);
+}
+.btnPrimary:active{
+    transform: translateY(-2px);
+}
+
+/* кнопка primary   конецы*/
+
+
+
+/* типография  */
+.h2_46size{
+    color: var(--gray-900, #1E212C);
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 130%; /* 59.8px */
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+
+.p-gray-16size{
+    color: var(--gray-700, #787A80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}

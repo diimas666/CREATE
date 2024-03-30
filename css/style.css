@@ -99,30 +99,7 @@ body {
     transform: translateY(0);
     opacity: 1;
  }
-.btnPrimary{
-    border-radius: 4px;
-    background: var(--primary, #7772F1);
-    color: var(--white, #FFF);
-    padding: 0 40px;
-    text-align: center;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    border: none;
-    font-weight: 700;
-    line-height: 52px; /* 325% */
-    letter-spacing: 0.5px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
-    transition: 0.3s;
-    cursor: pointer;
 
-}
-.btnPrimary:hover{
-    background-color: var(--gray-700);
-}
-.btnPrimary:active{
-    transform: translateY(-2px);
-}
 
 /* header-block    header-block */
 .header-block{
@@ -249,3 +226,66 @@ body {
     gap: 16px;
     width: 227px;
 }
+
+/* seo-agency-brand    seo-agency-brand */
+.seo-agency-brand {
+    display: grid;
+    grid-template-columns: repeat(6, 174px);
+    gap: 38px;
+}
+.seo-agency-brand img{
+    width: 174px;
+    height: 134px;
+    
+}
+/* Createx Agency  */
+.createx{
+    padding-top: 131px;
+    margin-bottom: 180px;
+}
+.createx-p{
+    max-width: 390px;
+    margin-bottom: 48px;
+}
+/* .btnCreatex{
+
+} */
+.createx_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.createx-left{
+    position: relative;
+    padding-top: 80px;
+}
+.createx-svg {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: -1;
+    width: 811.074px;
+    height: 1154.519px;
+    flex-shrink: 0;
+    fill: var(--bg-gradient, linear-gradient(206deg, rgba(244, 245, 246, 0.00) -6.96%, #F4F5F6 70.78%));
+}
+.createx-svg svg{
+    max-width: 100%;
+}
+.createx-right{
+    /* max-width: 705px; */
+    margin-left: 50px;
+    border-radius: 4px;
+    margin-bottom: 180px;
+}
+.createx-right img{
+    max-width: 100%;
+    height: auto;
+}
+.figures{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 148px);
+    gap: 48px;
+}
+/* .figures img{
+} */

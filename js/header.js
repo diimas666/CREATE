@@ -28,19 +28,23 @@ clickHamburger();
 
  // hanburger КОНЕЦ 
 //  наблюдатель за секциями 
-const allSections = document.querySelectorAll(".section");
-function revealSection(entries, observe){
-    if(entries[0].isIntersecting){
-        entries[0].target.classList.remove(" section--hidden");
-        observe.unobserve(entries[0].target);
-    }
-    
-}
-const sectionObserver = new IntersectionObserver(revealSection, {threshold:0.15});
 
-allSections.forEach(function(section){
+const allSections = document.querySelectorAll(".section");
+
+function revealSection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("section--hidden");
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+const sectionObserver = new IntersectionObserver(revealSection, { threshold: 0.15 });
+
+allSections.forEach(section => {
     sectionObserver.observe(section);
-    section.classList.add("section--hiden")
+    section.classList.add("section--hidden"); // Правильно написано "section--hidden"
 });
 
 // конец  наблюдатель за секциями 

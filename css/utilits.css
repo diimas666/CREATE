@@ -1,0 +1,6 @@
+/* секция скрывает  */
+.section--hidden{
+    opacity: 0;
+    transform: translateY(80px);
+}
+/* конец секции которая скрывает  */

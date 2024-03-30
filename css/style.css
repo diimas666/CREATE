@@ -19,6 +19,7 @@ body {
     line-height: 160%;
 
 }
+
 .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -55,12 +56,26 @@ body {
 
     opacity: 1;
 }
+
 .menu{
     display: flex;
     margin-left: 60px;
     gap: 40px;
     
 }
+/* .menu_active{
+    left: 0;
+    z-index: 100;
+} */
+
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 24px;
+}
+
+
 .link  {
     list-style-type: none;
     
@@ -199,4 +214,38 @@ body {
     position: absolute;
     left: 356px;
     background: linear-gradient(270deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+}
+
+/* seo-agency      seo-agency */
+.seo-agency{
+    padding-top: 120px;
+}
+
+.seo-agency_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.seo-text{
+    padding-bottom: 140px;
+    color: var(--gray-900Text);
+    max-width: 630px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.seo-certificate{
+    display: grid;
+    grid-template-columns: repeat(2, 227px);
+    grid-template-rows: repeat(2, 75px);
+    row-gap: 35px;
+}
+
+.seo-certificate-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 227px;
 }

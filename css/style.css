@@ -289,3 +289,80 @@ body {
 }
 /* .figures img{
 } */
+
+/* service service */
+.h2service{
+    text-align: center;
+    padding-bottom: 40px;
+}
+/* табі на сайте     */
+.service_wrapper{
+    margin: 0 auto;
+}
+/* service service */
+.tabs-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.tabs__nav-item{
+    cursor: pointer;
+    display: flex;
+    width: 246px;
+    height: 46px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    /* flex: 1; */
+}
+
+.tabs__nav-item.is-active{
+    display: flex;
+    width: 246px;
+    height: 46px;
+    padding: 10px 78px 10px 77px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--primary, #7772F1);
+}
+.tab {
+    display: none;
+    background: white;
+    padding: 20px;
+}
+.tab.is-active{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--primary, #7772F1);
+}
+/* табі на сайте   конец   */
+.h2-service {
+    max-width: 390px;
+    padding-bottom: 24px;
+}
+
+.list{
+    position: relative;
+    list-style-type: none;
+    padding-bottom: 48px;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li::before{
+    position: relative;
+    display:inline-block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    padding-right: 8px;
+    background: url('../img-others/Mark.svg')center no-repeat;
+
+}
+.tab-btn{
+    margin-bottom: 180px;
+}

@@ -7,6 +7,10 @@
         font-size: 45px;
         max-width: 480px;
     }
+    .seo-agency-brand img:last-child{
+        display: none;
+    }
+  
 }
 
 @media (max-width: 991px){
@@ -32,6 +36,13 @@
     .seo-agency-brand{
         /* max-width: 990px; */
         grid-template-columns: repeat(4, 174px);
+    }
+    .tab-right svg{
+        display: none;
+    }
+    .tab-btn{
+        white-space: nowrap;
+        display: flex;
     }
 }
 
@@ -123,7 +134,15 @@
         justify-content: space-between;
         
     }
-    
+    .createx-right{
+        display: none;
+    }
+    .tabs__nav-item,  .tabs__nav-item.is-active{
+        width: 200px;
+    }
+    .tab-right{
+        display: none;
+    }
     
     
    

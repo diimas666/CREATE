@@ -5,6 +5,7 @@
     --gray-700: #787A80;
     --gray-800: #424551;
     --gray-300: #E5E8ED;
+
 }
 * {
     box-sizing: border-box;
@@ -336,7 +337,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid var(--primary, #7772F1);
+    /* border: 1px solid var(--primary, #7772F1); */
 }
 /* табі на сайте   конец   */
 .h2-service {
@@ -365,4 +366,191 @@ body {
 }
 .tab-btn{
     margin-bottom: 180px;
+}
+.tab-wrapper{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between ;
+}
+.tab-right img{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.tab-right svg {
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+/* getForm getForm  */
+
+.getForm {
+    height: 556px;
+    background: var(--gray-900, #1E212C);
+}
+.getForm_wrapper{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 25px;
+}
+.message{
+    width: 100%;
+}
+.form-top input{
+    display: flex;
+    width: 285px;
+    height: 52px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 13px 194px 13px 16px;
+    align-items: center;
+}
+.message{
+    height: 52px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 13px 194px 13px 16px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+.cheked{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    display: inline-block;
+    max-width: 287px;
+    
+}
+/* faq"    faq" */
+.faq_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.faq_wrapper_ask{
+    padding-top: 180px;
+    padding-bottom: 60px;
+
+}
+.faq_vn{
+    margin-bottom: 60px;
+
+}
+.faq_vn .item {
+    position: relative;
+    margin-bottom: 20px;
+    background: transparent;
+    transition: all 1s;
+    cursor: pointer;
+}
+.faq_vn .item .heading {
+    color: var(--gray-900, #1E212C);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+}
+.faq_vn .item .heading::before {
+    content: "";
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    left: -20px;
+    /* transform: translateY(-50%); */
+}
+
+.faq_vn .accord_active::before {
+    content: "";
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    left: -20px;
+}
+.faq_vn .item .content {
+    max-width: 560px;
+    color: var(--gray-700, #787A80);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+
+}
+.faq_vn .accord_active {
+    background: transparent;
+    max-width: 560px;
+}
+.faq_wrapper_img{
+    padding-top: 228px;
+}
+
+/* read    read */
+
+.read{
+    background: var(--gray-300);
+    height: 782px;
+}
+.read_wrapper{
+    padding-top: 80px;
+}
+.read_descr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.read_arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 48px;
+    gap: 12px;
+}
+.arrow-img-inner{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background: var(--gray-300);
+    padding: 12px;
+    transition: .3s all;
+    cursor: pointer;
+}
+.arrow-img-inner:hover{
+    background: var(--primary, #7772F1);
+}
+.card_wrapper{
+    display: flex;
+}
+
+.card_item{
+    width: 390px;
+    height: 390px;
+    padding: 24px 40px 40px 40px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-300, #E5E8ED);
+    background: var(--white, #FFF);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.read-circle{
+    display: flex;
+}
+.read-circle-item-text {
+    display: flex;
 }

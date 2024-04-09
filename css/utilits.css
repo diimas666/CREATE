@@ -50,8 +50,22 @@
 .ml-25{
     margin-left: 24px;
 }
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-71{
+    margin-bottom: 71px;
+}
 
 /* типография  */
+.h5-fz14{
+    color: var(--gray-900, #1E212C);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
 .h2_46size{
     color: var(--gray-900, #1E212C);
     font-size: 46px;
@@ -60,7 +74,25 @@
     white-space: nowrap;
     margin-bottom: 40px;
 }
-
+.h2_46size_white {
+    color: var(--white, #FFF);
+    font-family: Lato;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%; /* 59.8px */
+}
+.mb40px {
+    margin-bottom: 40px;
+}
+.fz16px_white{
+    color: var(--white, #FFF);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}
 .p-gray-16size{
     color: var(--gray-700, #787A80);
     font-size: 16px;
